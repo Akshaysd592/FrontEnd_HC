@@ -14,7 +14,7 @@ function App() {
         setThemeMode("light")
      }
 
-     const darkTheme = ()=>{
+     const darkTheme = ()=>{ // context api function manipulation 
       setThemeMode("dark")
      }
      //-----------------------------------------
@@ -25,6 +25,8 @@ function App() {
        document.querySelector('html').classList.add(themeMode)
      },
      [themeMode])
+
+
   return (
     <ThemeProvider value={{themeMode,lightTheme,darkTheme}}>
     <div className="flex flex-wrap min-h-screen items-center">
@@ -38,7 +40,7 @@ function App() {
         </div>
     </div>
      </div>
-</ThemeProvider>
+   </ThemeProvider>
   )
 }
 

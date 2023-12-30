@@ -3,7 +3,7 @@ import useTheme from '../context/theme';
 
 export default function ThemeButton() {
      
-   const {themeMode,lightTheme,darkTheme}  =   useTheme()
+   const {themeMode,lightTheme,darkTheme}  =   useTheme() // useTheme is custom hook created to use the variables and functions declared 
 
    const onChangeBtn = (e)=>{
     const  darkModeStatus = e.currentTarget.checked;
